@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Typical from 'react-typical'
 import ProfileImage from './Images/ProfileImage.jpg'
@@ -27,7 +26,7 @@ function App() {
       />
       
       </div>
-       <img src={ProfileImage} className="h-1/2 rounded-full" />
+       <img src={ProfileImage} alt="profile" className="h-1/2 rounded-full" />
       </div>
     </div>
   );
