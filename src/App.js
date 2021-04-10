@@ -5,7 +5,7 @@ import ProfileImage from './Images/ProfileImage.jpg'
 function App() {
   return (
     <div className="bg-white w-screen h-min-screen">
-      <div className="h-screen text-white bg-black flex flex-row justify-evenly items-center p-2">
+      <div className="h-screen text-white bg-black flex flex-col-reverse md:flex-row justify-evenly items-center p-2">
        <div className="flex-grow">
        <h1 className="text-center text-3xl">Hi! My name is Pranav </h1>
       <Typical
