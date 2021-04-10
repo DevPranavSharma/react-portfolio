@@ -1,23 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import Typical from 'react-typical'
+import ProfileImage from './Images/ProfileImage.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-white w-screen h-min-screen">
+      <div className="h-screen text-white bg-black flex flex-row justify-evenly items-center p-2">
+       <div className="flex-grow">
+       <h1 className="text-center text-3xl">Hi! My name is Pranav </h1>
+      <Typical
+        steps={
+          [
+            'I am a web developer 🖥',
+             1200,
+             'I am a proud Indian 🇮🇳',
+             1000,
+            'I am a football aficianado ⚽️',
+            1200,
+            'I am a geek 👾',
+            1000
+          ]
+        }
+        loop={Infinity}
+        className="text-2xl text-center font-mono"
+      />
+      
+      </div>
+       <img src={ProfileImage} className="h-1/2 rounded-full" />
+      </div>
     </div>
   );
 }
