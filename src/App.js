@@ -1,6 +1,7 @@
 import './App.css';
 import Typical from 'react-typical'
 import ProfileImage from './Images/ProfileImage.jpg'
+import TechStack from './Components/TechStack'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
              1200,
              'I am a proud Indian 🇮🇳',
              1000,
-            'I am a football aficianado ⚽️',
+            'I am a football aficionado ⚽️',
             1200,
             'I am a geek 👾',
             1000
@@ -28,6 +29,7 @@ function App() {
       </div>
        <img src={ProfileImage} alt="profile" className="h-1/2 rounded-full" />
       </div>
+      <TechStack/>
     </div>
   );
 }
