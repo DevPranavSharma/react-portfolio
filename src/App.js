@@ -4,6 +4,7 @@ import ProfileImage from './Images/ProfileImage.jpg'
 import TechStack from './Components/TechStack'
 import {Link as ScrollLink } from 'react-scroll';
 import SocialLinks from './Components/SocialLinks';
+import About from './Components/About';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
        <img src={ProfileImage} alt="profile" className="h-1/2 rounded-full" />
       </div>
       <TechStack/>
+      <About/>
       <SocialLinks/>
     </div>
   );
